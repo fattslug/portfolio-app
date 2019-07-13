@@ -1,0 +1,47 @@
+.homepage-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile {
+  &-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    &__circle-crop {
+      position: relative;
+      overflow: hidden;
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+  
+      img {
+        position: absolute;
+        width: 120%;
+        top: -23px;
+        left: -15px;
+      }
+    }
+  }
+
+  &-name {
+    margin: 10px;
+  }
+
+  &-description {
+    margin: 10px;
+  }
+
+  &-location {
+    margin: 10px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+}
