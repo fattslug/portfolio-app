@@ -36,7 +36,7 @@ jobs:
 
       - run: 
           name: Installing Dependencies
-          command: npm install
+          command: yarn install
 
       - save_cache:
           paths:
@@ -45,7 +45,7 @@ jobs:
 
       - run: 
           name: Building
-          command: npm run build
+          command: yarn build
 
       - run:
           name: Remove Old Build
